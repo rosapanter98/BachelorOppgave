@@ -1,0 +1,91 @@
+/* Generell reset for å fjerne marginer og padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Moderne, lettleselig font */
+    background-color: #121212; /* Mørk bakgrunn */
+    color: #E0E0E0; /* Lys tekstfarge for god kontrast */
+    line-height: 1.6; /* Gjør teksten mer lesbar */
+}
+
+a {
+    color: #BB86FC; /* Lilla farge for linker */
+    text-decoration: none; /* Fjerner understrekning */
+}
+
+a:hover {
+    text-decoration: underline; /* Understrekning når man holder musepekeren over */
+}
+
+/* Standardinnstillinger for containere */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    margin-left: 10%; /* Flytt containeren 10% fra venstre */
+}
+
+/* Generelle klasser for padding og margin */
+.p-1 { padding: 10px; }
+.p-2 { padding: 20px; }
+.m-1 { margin: 10px; }
+.m-2 { margin: 20px; }
+
+/* Overskrifter */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px;
+    color: #FFCB6B; /* Gul farge for overskrifter */
+}
+
+/* Knapper */
+.btn {
+    display: block; /* Endret fra inline-block til block for sentrering */
+    width: auto; /* Auto bredde for å tillate indre padding å bestemme størrelsen */
+    margin: 0 auto; /* Sentrerer knappen horisontalt */
+    background-color: #03DAC6; /* Mint farge */
+    color: #000; /* Svart tekst for knapper */
+    padding: 15px 30px; /* Økt padding for 50% større størrelse */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1.5em; /* Øker skriftstørrelsen for å matche den større knappen */
+}
+
+
+.btn:hover {
+    background-color: #018786; /* Mørkere mint farge ved hover */
+}
+
+.custom-form {
+    display: flex; /* Bruk flexbox */
+    flex-direction: column; /* Stakk elementene vertikalt */
+    margin-left: 10%; /* Flytt formen 10% fra venstre */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Legg til litt avstand mellom skjemaelementene */
+}
+
+label {
+    margin-bottom: 5px; /* Legg til litt avstand under etikettene */
+}
+
+/* Spesifikk klasse for feilmeldinger */
+.error-message {
+    color: #CF6679; /* Rosa farge for feilmeldinger */
+}
+
+/* Fotnote-stil */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #999; /* Lysere grå tekst for fotnote */
+}
+.content {
+    margin-left: 20px; /* Adjust this value as needed to shift content right */
+  }

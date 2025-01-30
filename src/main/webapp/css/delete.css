@@ -1,0 +1,36 @@
+.container {
+    max-width: 900px; /* Control the max width */
+    margin: 20px auto; /* Centering the container */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+}
+.grid {
+    display: flex;
+    width: 100%; /* Ensure the grid takes the full width */
+}
+.grid button {
+    width: auto; /* Allow the button to fit its content */
+    margin-bottom: 5px; /* Space between button and dropdown */
+}
+.question-item, .standard-item, .verdi-item, .forskrift-item {
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between items */
+}
+.question-details, .standard-details, .verdi-details, .forskrift-details {
+    display: none; /* Initially hide details */
+    flex-direction: column; /* Ensure vertical stacking inside details */
+}
+button {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+span {
+    font-size: 16px;
+}
